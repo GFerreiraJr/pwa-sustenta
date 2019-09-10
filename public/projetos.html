@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Sustenta!</title>
+  <meta name="description" content="PWA da produção de alimentos Sustenta!">
+  <meta charset="utf-8">
+  <meta name="theme-color" content="#fff" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Manifest -->
+  <link rel="manifest" href="/manifest.json">
+
+  <!-- Incompatibilidade do manifest.json com o Safari -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Sustenta!">
+  <link rel="apple-touch-icon" href="/images/icons/icon-152x152.png">
+
+  <!-- Bootsttrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!--Google Fontes-->
+  <link href="https://fonts.googleapis.com/css?family=Cabin|Fjalla+One" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link href="/styles/css.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="Nav-projetos">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="/images/logo_200x46.png"></a>
+        <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="cadastro_projeto.html">Novo Projeto</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="ideias.html">Ideias</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="servicos.html">Serviços</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="certificados.html">Certificados e Legislação</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  
+  <header class="header-projetos">
+    <div class="container text-center">
+      <div class="row banner-header">
+        <div class="col-md-6 col-sm-12">
+          <h2>PROJETOS</h2>
+          <p>Encontre a melhor solução para sua plantação.</p>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <a href="cadastro_projeto.html"><button class="btn btn-primary btn-lg">Novo Projeto</button></a>
+        </div>
+      </div>
+      <hr>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12 box-projeto">
+          <div class="card">
+            <a href=""><img src="/images/agrofloresta1280x720.png" class="card-img-top" alt="Agrofloresta"></a>
+            <div class="card-body">
+              <h5 class="card-title">Agroflorestas</h5>
+              <p class="card-text">Cultivo diversificado de especies que incluem grandes arvores de madeira nobre, vegetais, leguminosas, etc.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted"><a href="cadastro_projeto.html"><button class="btn btn-primary btn-lg">Ver Projeto</button></a></small>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-lg-4 col-md-6 col-sm-12 box-projeto">
+          <div class="card">
+            <a href=""><img src="/images/sensor-de-umidade1280x720.jpg" class="card-img-top" alt="Ummity Sensor"></a>
+            <div class="card-body">
+              <h5 class="card-title">Irrigação Automatizada</h5>
+              <p class="card-text">Cultivo diversificado de especies que incluem grandes arvores de madeira nobre, vegetais, leguminosas, etc.</p>
+            </div>
+            <div class="card-footer">
+               <small class="text-muted"><a href="cadastro_projeto.html"><button class="btn btn-primary btn-lg">Ver Projeto</button></a></small>
+            </div>
+          </div>
+       </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12 box-projeto">  
+          <div class="card">
+            <a href=""><img src="/images/FloraMonitor1280x720.jpg" class="card-img-top" alt="Pragas"></a>
+            <div class="card-body">
+              <h5 class="card-title">Flora Monitor</h5>
+              <p class="card-text">Tem controle e presĩção sobre umidade e luz solar integradas em um único dispositivo fácil de aplicar e utiizar.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted"><a href="FloraMonitor.html"><button class="btn btn-primary btn-lg btn-ver">Ver Projeto</button></a></small>
+              </small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12 box-projeto">  
+          <div class="card">
+            <a href=""><img src="/images/ph-sensor1280x720.png" class="card-img-top" alt="ph-sensor"></a>
+            <div class="card-body">
+              <h5 class="card-title">Sensor de Ph+</h5>
+              <p class="card-text">Sabia o controle de pH pode aumentar sua produtividade e reduzir o uso de insumos? Clique e saiba mais. </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted"><a href="cadastro_projeto.html"><button class="btn btn-primary btn-lg btn-ver">Ver Projeto</button></a></small>
+              </small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12 box-projeto">  
+          <div class="card">
+            <a href=""><img src="/images/horta-vertical1280x720.jpg" class="card-img-top" alt="Pragas"></a>
+            <div class="card-body">
+              <h5 class="card-title">Hortas com Acesso Remoto</h5>
+              <p class="card-text">Colha vegetais, temperos e chás sempre frescos e saborosos, com ajuda do controle remoto a umidade e luz solar.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted"><a href="cadastro_projeto.html"><button class="btn btn-primary btn-lg btn-ver">Ver Projeto</button></a></small>
+              </small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12 box-projeto">  
+          <div class="card">
+            <a href=""><img src="/images/light-sensor1280x720.png" class="card-img-top" alt="Sensor Solar"></a>
+            <div class="card-body">
+              <h5 class="card-title">Controle de Luminosidade Solar</h5>
+              <p class="card-text">O controle precisso da incedência de luz solar favorece o desenvolvimento das plantas e previne perdas.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted"><a href="cadastro_projeto.html"><button class="btn btn-primary btn-lg btn-ver">Ver Projeto</button></a></small>
+              </small>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+  
+
+<!-- Footer -->
+<footer>
+  <div class="copyright py-4 text-center text-white">
+    <div class="container">
+      <small>Copyright &copy; Sustenta! 2019</small>
+    </div>
+  </div>
+</footer>
+  
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>

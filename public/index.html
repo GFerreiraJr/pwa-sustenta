@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Sustenta!</title>
+  <meta name="description" content="PWA da produção de alimentos Sustenta!">
+  <meta charset="utf-8">
+  <meta name="theme-color" content="#fff" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Manifest -->
+  <link rel="manifest" href="/manifest.json">
+
+  <!-- Incompatibilidade do manifest.json com o Safari -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Sustenta!">
+  <link rel="apple-touch-icon" href="/images/icons/icon-152x152.png">
+
+  <!-- Bootsttrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!--Google Fontes-->
+  <link href="https://fonts.googleapis.com/css?family=Cabin|Fjalla+One" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link href="/styles/css.css" rel="stylesheet">
+</head>
+
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase index-nav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="index.html"><img src="images/logo_200x46.png"></a>
+        <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="/projetos.html">Projetos</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#cadastrar">Cadastro</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">O que é o Sustenta?</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contatos">Contatos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  <header class="masthead bg-primary text-white text-center">
+    <h2 class="text-uppercase mb-4"> Bem-vindo(a) ao Sustenta! </h2> 
+    <div class="container">
+      <div class="row">        
+        <div class="col"></div>
+
+        <div class="col-lg-8"> 
+          <h5>Realize seu login</h5>
+          
+          <form action="logar.php" method="post" name="login"><!-- Formulário de Login -->
+              
+            <label>CPF</label>
+            <input class="form-control" name="cpf_app" type="text" placeholder="CPF" required="required" data-validation-required-message="Por favor, insira seu CPF sem pontuação.">
+            <p class="help-block text-danger"></p>
+             
+            <label>Senha</label>
+            <input class="form-control" name="senha_app" type="password" placeholder="Senha" required="required" data-validation-required-message="Por favor insira sua senha">
+            <p class="help-block text-danger"></p>
+             
+            <div class="checkbox">
+            <label><input type="checkbox">Permanecer conectado</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-xl" id="login">Entrar</button>
+            <a class="btn btn-primary btn-xl" href="#cadastrar"> Novo cadastro </a>
+  
+          </form>   <!-- Fim do formulário -->
+        </div> <!-- Col -->  
+        <div class="col"></div>          
+      </div> <!-- Row -->
+    </div> <!-- Conteiner -->
+  </header>
+
+  <section class="cadastrar text-center" id="cadastrar">
+    <div class="container">
+      <h3 class="h3-cadastro">Novo cadastro</h3>
+        <div class="row">
+        <div class="col-lg-6">
+          
+          <form action="cadastrar.php" method="post" name="cadastro" id="cadastro" ><!-- Formulário de cadastro -->
+              
+            <label>CPF</label>   
+            <input class="form-control" name="cpf_app" type="text" placeholder="CPF" required="required" data-validation-required-message="Por favor insira seu CPF">
+            <p class="help-block text-danger"></p> 
+         
+            <label>Nome</label>
+            <input class="form-control" name="nome_app" type="text" placeholder="Nome" required="required" data-validation-required-message="Por favor insira seu nome">
+            <p class="help-block text-danger"></p> 
+      
+            <label>Email</label>
+            <input class="form-control" nome="email_app" type="email" placeholder="Email">
+            <p class="help-block text-danger"></p> 
+
+            <label>Telefone</label>
+            <input class="form-control" name="tele_app" type="tele" placeholder="Telefone" required="required" data-validation-required-message="Por favor insira seu número de telefone.">
+            <p class="help-block text-danger"></p> 
+
+        </div>
+        <div class="col-lg-6">
+            
+            <label>Senha</label>
+            <input class="form-control" name="senha_app" type="password" placeholder="Senha" required="required" data-validation-required-message="Por favor insira sua senha.">
+            <p class="help-block text-danger"></p> 
+           
+            <label>Confirme a senha</label>
+            <input class="form-control" name="csenha_app" type="password" placeholder="Confirme a senha" required="required" data-validation-required-message="Por favor insira seu nome">
+            <p class="help-block text-danger"></p>
+              
+            <label>Nascimento</label>
+            <input class="form-control" name="dtnas_app" type="date" placeholder="Nascimento" required="required" data-validation-required-message="Por favor insira a data do seu nascimento">
+            <p class="help-block text-danger"></p> 
+      
+            <label>Escolha sua categoria</label>
+            <select class="form-control" required="required" data-validation-required-message="Por favor insira seu nomename" name="categoria_app" >
+              <option value="">-Categoria -</option>
+              <option value="Produtor rural">Produtor rural</option>
+              <option value="Extensionista">Extensionista</option>
+              <option value="Fazendeiro">Fazendeiro</option>
+              <option value="Granjeiro">Granja</option>
+              <option value="Pesquisador">Pesquisador</option>
+              <option value="Produtor familiar">Produtor familiar</option>
+              <option value="Produtor rural">Produtor rural</option>
+            </select>
+            
+            <p class="help-block text-danger"></p>
+            
+        </div> <!-- Fim da  coluna 2 cadastro -->
+          
+          <div class="container"> <!-- Botão cadastrar centralizado -->
+            <div class="row">
+              <div class="col-lg-12">
+              <button type="submit" class="btn btn-primary btn-xl" name="cadastrar">Cadastrar</button>
+              </div> 
+            </div>
+          </div>
+
+          </form> <!-- Final do formulário -->  
+        
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+ <!-- O que é o Sustenta? -->
+
+    <section class="bg-primary text-white mb-0" id="about">
+      <div class="container">
+        <h3 class="text-center text-uppercase text-white">O que é o Sustenta?</h3>
+        <div class="row">
+          <div class="col"></div>
+          <div class="col-md-8">
+            <p align="justify">Esse projeto tem a inteção de formar uma rede social vinculada a um proposito, o de estimular o uso e desenvolvimento de ferramentas e práticas sustentáveis na produção de alimentos. Nossa função é oferecer todos meios necessários de conexão, de forma gratuita e eficiênte aos usuários. Para usar realize seu <a href="#cadastrar">cadastro</a>.</p>
+          </div>
+          <div class="col"></div>
+        </div>
+        <div class="text-center mt-4">
+          <a class="btn btn-xl btn-outline-light" href="index.html">
+            <i class="fas fa-download mr-2"></i>
+            Comece a usar
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer text-center" id="contatos">
+      <div class="container">
+        <div class="row">
+          
+          <div class="col-md-6">
+            <h4 class="text-uppercase mb-4">NA INTERNET</h4>
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item">
+                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
+                  <i class="fab fa-fw fa-facebook-f"></i>
+                </a>
+              </li>            
+              <li class="list-inline-item">
+                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
+                  <i class="fab fa-fw fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
+                  <i class="fab fa-fw fa-linkedin-in"></i>
+                </a>
+              </li>
+              <li>
+                <br>
+                <p>contato@appsustenta.eco.br</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-6">
+            <h4 class="text-uppercase mb-4">TELEFONES</h4>
+              <ul class="list-inline mb-0">
+                <li class="list-inline-item">
+                  <P>31 99909-9033</P>
+                  <P>31 98481-8458</P>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+      
+        </div>
+    </footer>
+
+    <div class="copyright py-4 text-center text-white">
+      <div class="container">
+        <small>Copyright &copy; Sustenta! 2019</small>
+      </div>
+    </div>
+
+  <!-- Scripts Bootstrap -->  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <!-- Install script here -->
+  <script src="/scripts/install.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service-worker.js')
+        .then((reg) => {
+          console.log('Service worker registered.', reg);
+        });
+  });
+}
+  </script>
+
+</body>
+</html>
